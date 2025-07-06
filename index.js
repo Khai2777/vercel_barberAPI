@@ -4,7 +4,7 @@ require("dotenv").config();
 
 const { Pool } = require("pg");
 
-const { DATABASE_URL } = process.env;
+const { DATABASE_URL } = (`postgresql://neondb_owner:npg_brnHAdwB4iv7@ep-holy-lake-a18qyqqc-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require`, process.env);
 
 let app = express();
 app.use(cors());
