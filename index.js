@@ -173,6 +173,10 @@ app.patch("/bookings/:id/status", async (req, res) => {
     }
 });
 
+app.get("/", (req, res) => {
+    res.send("Welcome to the Barber API!");
+});
+
 // Start server
 app.listen(3000, () => {
     console.log("App is listening on port 3000");
