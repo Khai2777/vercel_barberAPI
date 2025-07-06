@@ -17,7 +17,7 @@ const pool = new Pool({
     },
 });
 
-//To test our API connection function with SQL
+//To test our API connection function with SQLL
 async function getPostgresVersion() {
     const client = await pool.connect();
     try {
